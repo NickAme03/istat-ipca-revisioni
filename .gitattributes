@@ -1,0 +1,8 @@
+# I fine riga restano LF ovunque, anche nelle copie di lavoro su Windows.
+#
+# Senza questo, git converte in CRLF alla copia e lo scraper riscrive in LF a
+# ogni esecuzione locale: il confronto "il dato e' cambiato" diventerebbe vero
+# per un motivo che non ha niente a che fare con i dati, e la cronologia delle
+# revisioni ISTAT, che e' il punto di questo repository, si riempirebbe di
+# commit falsi.
+* text=auto eol=lf
